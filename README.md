@@ -10,4 +10,8 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+Sistema de Visualização de Dados Geoespaciais
+
+A princípio os usuários têm a capacidade de explorar, analisar e visualizar informações geográficas em formato de mapas interativos, além de poderem procurar locais, endereços ou características geoespaciais específicas no mapa.
+
+Observação: Caso haja tempo, incluir funcionalidades de visualização 3D, fornecendo uma experiência mais imersiva..
