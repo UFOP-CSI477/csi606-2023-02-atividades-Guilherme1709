@@ -1,6 +1,6 @@
 # **Atividade Prática 1**
 
-## Atualize os seus dados
+## Informações essenciais
 
 - Nome: Guilherme Lopes de Araújo
 - Matrícula: 20.2.8078
