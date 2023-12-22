@@ -4,6 +4,8 @@ import { estadoRouter } from './routes/estados.js';
 import { cidadeRouter } from './routes/cidades.js';
 import { tipoRouter } from './routes/tipoSanguineo.js';
 import { pessoasRouter } from './routes/pessoas.js';
+import { doacoesRouter } from './routes/doacoes.js';
+import { locaisRouter } from './routes/locais.js';
 
 const port = 4444
 const server = express()
@@ -27,3 +29,5 @@ server.use(estadoRouter)
 server.use(cidadeRouter)
 server.use(tipoRouter)
 server.use(pessoasRouter)
+server.use(doacoesRouter)
+server.use(locaisRouter)
