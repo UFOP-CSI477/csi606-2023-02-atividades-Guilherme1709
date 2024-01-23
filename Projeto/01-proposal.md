@@ -19,17 +19,23 @@ A princípio os usuários têm a capacidade de explorar, analisar e visualizar i
 ### 2. Escopo
 
   Este projeto terá as seguintes funcionalidades:
-    . Pesquisas por locais ...
+    . Pesquisas por locais, através de seus nomes;
+    . Geração de arquivos em formato JSON, com os dados geográficos dos locais pesquisados;
+    . Geração do mapa do local pesquisado;
+    . O usuário só terá acesso ao arquivo JSON se efetuar cadastro e login no site.
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  Neste trabalho não serão considerados:
+  . Geração de mapas em 3D;
+  . Geração de mapas com visualização das ruas (Street View - Google Earth);
+  . Fotos dos locais pesquisados.
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Os protótipos para as páginas inicial e de resultado da pesquisa podem ser encontrados em: https://www.figma.com/file/stOABMJNYE6vvHr9OmOFSR/BrazilExplorer---Gazetteer?type=design&node-id=0%3A1&mode=design&t=C42PxulrQC3zTW7s-1
 
 ### 5. Referências
 
