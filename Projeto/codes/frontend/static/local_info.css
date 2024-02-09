@@ -1,0 +1,114 @@
+/* Estilos gerais */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.icon{
+    position: absolute;
+    background-image: url('./assets/brasil.png');
+    width: 60px;
+    height: 60px;
+    left: 87%;
+    margin-top: -20px;
+}
+
+.voltar{
+    position: absolute;
+    background-image: url('./assets/botao-voltar.png');
+    left: 3%;
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.local-info-list{
+    margin: 20px;
+    
+}
+
+/* Estilos para a lista de informações dos locais */
+.local-list {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    background-color: #d7eafc;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(89, 89, 89) ;
+}
+.other-names-list{
+    text-align: center;
+}
+
+.local-item {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Estilos para a mensagem de nenhum resultado */
+.no-results {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    position: absolute;
+    background-color: #005A8A;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    top: 0px;
+    box-shadow: 10px 10px 10px rgb(89, 89, 89) ;
+}
+
+nav{
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para o link de volta */
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

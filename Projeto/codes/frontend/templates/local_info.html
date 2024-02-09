@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Locais</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='local_info.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="voltar"></a></li>
+                <li style="text-align: center;">
+                    <a href="{{ url_for('index') }}" style="left: 50%; position: absolute; transform: translate(-50%,0);">Página Inicial</a>
+                </li>
+                <icon class="icon"></icon>
+            </ul>
+        </nav>   
+    </header>
+
+
+    <div id="info-container">
+        <ul class="local-info-list">
+            {% if local_info_list %}
+                <h2 style="text-align: center;">Locais encontrados</h2>
+                    {% for local in local_info_list %}
+                    <ul class="local-list">
+                        <li><strong>Nome Principal:</strong> {{ local['name'] }}</li>
+                        <li><strong>População:</strong> {{ local['population'] }}</li>
+                        <li><strong>Latitude:</strong> {{ local['latitude'] }}</li>
+                        <li><strong>Longitude:</strong> {{ local['longitude'] }}</li>
+                        <li><strong>Timezone:</strong> {{ local['timezone'] }}</li>
+                        <li><strong>Geonameid:</strong> {{ local['geonameid'] }}</li>
+                        <li><strong>Nomes Alternativos:</strong>
+                            {% if local['other_names'] %}
+                              <ul class="other-names-list">
+                                {% for other_name in local['other_names'] %}
+                                  <li>{{ other_name }}</li>
+                                {% endfor %}
+                              </ul>
+                            {% else %}
+                              <li>Nenhum nome alternativo encontrado</li>
+                            {% endif %}
+                          </li>
+                    </ul>
+                    {% endfor %}
+            {% else %}
+                <h2>Nenhum local encontrado. Verifique se a escrita está correta e tente novamente &#x1F609;</h2>
+
+            {% endif %}
+        </ul>
+    </div>
+
+</body>
+
+</html>

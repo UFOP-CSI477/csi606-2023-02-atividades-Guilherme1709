@@ -1,0 +1,153 @@
+/* página em geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    margin-right: 20px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+.icon{
+    position: absolute;
+    background-image: url('./assets/brasil.png');
+    width: 60px;
+    height: 60px;
+    left: 87%;
+    margin-top: -20px;
+}
+
+.center-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* formulário da pesquisa */
+.search-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* resultados */
+.results {
+    margin-top: 40px;
+}
+
+.results h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.result {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* links */
+.result a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+/* título */
+.center-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    background-color: #005A8A;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

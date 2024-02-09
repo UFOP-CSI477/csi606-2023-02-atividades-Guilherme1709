@@ -1,0 +1,224 @@
+GET http://localhost:4444/estados
+
+###
+POST http://localhost:4444/estados
+Content-Type: application/json
+
+{
+    "nome" : "Rio de Janeiro",
+    "sigla" : "RJ"
+}
+
+###
+PUT http://localhost:4444/estados
+Content-Type: application/json
+
+{
+    "id" : 4,
+    "nome" : "Espírito Santo",
+    "sigla" : "ES"
+}
+
+###
+DELETE http://localhost:4444/estados
+Content-Type: application/json
+
+{
+    "id" : 4
+}
+
+
+
+
+###
+GET http://localhost:4444/cidades
+
+###
+POST http://localhost:4444/cidades
+Content-Type: application/json
+
+{
+    "nome" : "Niterói",
+    "estado_id" : 5
+}
+
+###
+GET http://localhost:4444/cidades/1
+
+###
+PUT http://localhost:4444/cidades
+Content-Type: application/json
+
+{
+    "id" : 4,
+    "nome" : "Araxá",
+    "estado_id" : 1
+}
+
+###
+DELETE http://localhost:4444/cidades
+Content-Type: application/json
+
+{
+    "id" : 6
+}
+
+
+
+
+###
+GET http://localhost:4444/tipoSanguineo
+
+###
+GET http://localhost:4444/tipoSanguineo/1
+
+###
+POST http://localhost:4444/tipoSanguineo
+Content-Type: application/json
+
+{
+    "tipo" : "O",
+    "fator" : "Positivo"
+}
+
+###
+PUT http://localhost:4444/tipoSanguineo
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "tipo" : "B",
+    "fator" : "Negativo"
+}
+
+###
+DELETE http://localhost:4444/tipoSanguineo
+Content-Type: application/json
+
+{
+    "id" : 4
+}
+
+
+
+
+###
+GET http://localhost:4444/pessoas
+
+###
+GET http://localhost:4444/pessoas/2
+
+###
+POST http://localhost:4444/pessoas
+Content-Type: application/json
+
+{
+    "nome" : "Agostinho Carrara",
+    "rua" : "Rua 36",
+    "numero" : "49",
+    "complemento" : "Em frente à pastelaria do Beiçola",
+    "rg" : "12345-MG",
+    "tipo_id" : 1,
+    "cidade_id" : 1
+}
+
+###
+PUT http://localhost:4444/pessoas
+Content-Type: application/json
+
+{
+    "id" : 2,
+    "nome" : "Abelardo Beiçola",
+    "rua" : "Rua 36",
+    "numero" : "61",
+    "complemento" : "Em frente ao salão da Marilda",
+    "rg" : "87546-MG",
+    "tipo_id" : 2,
+    "cidade_id" : 1
+}
+
+###
+DELETE http://localhost:4444/pessoas
+Content-Type: application/json
+
+{
+    "id" : 3
+}
+
+
+
+
+###
+GET http://localhost:4444/doacoes
+
+###
+GET http://localhost:4444/doacoes/2
+
+###
+POST http://localhost:4444/doacoes
+Content-Type: application/json
+
+{
+    "pessoa_id": 2,
+    "local_id": 1
+}
+
+###
+PUT http://localhost:4444/doacoes
+Content-Type: application/json
+
+{
+    "id": 3,
+    "pessoa_id": 1,
+    "local_id": 1
+}
+
+###
+DELETE http://localhost:4444/doacoes
+Content-Type: application/json
+
+{
+    "id" : 3
+}
+
+
+
+
+###
+GET http://localhost:4444/locais
+
+###
+GET http://localhost:4444/locais/1
+
+###
+POST http://localhost:4444/locais
+Content-Type: application/json
+
+{
+    "nome" : "Hemominas Monlevadexxx",
+    "rua" : "Rua 75",
+    "numero" : "142",
+    "complemento" : "Próximo à Arcellor Mital",
+    "cidade_id" : 1
+}
+
+###
+PUT http://localhost:4444/locais
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "nome" : "Hemominas Araxá",
+    "rua" : "Rua Das Alamedas",
+    "numero" : "85",
+    "complemento" : "Próximo à Praça Dos Sete Amores",
+    "cidade_id" : 4
+}
+
+###
+DELETE http://localhost:4444/locais
+Content-Type: application/json
+
+{
+    "id" : 4
+}

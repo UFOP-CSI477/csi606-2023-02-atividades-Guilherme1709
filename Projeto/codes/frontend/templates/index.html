@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>BrazilExplorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='local_info.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a>BrazilExplorer</a></li>
+                <icon class="icon"></icon>
+            </ul>
+        </nav>
+    </header>
+
+        <h1 class="center-title">BrasilExplorer</h1>
+            <div class="center-content">
+                <form action="/local_info" method="POST" class="search-form">
+                    <label for="local_pesquisado">Digite o nome do local que deseja procurar:</label>
+                    <input type="text" id="local_pesquisado" name="local_pesquisado" required style="width: 95%;">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+</body>
+
+</html>
