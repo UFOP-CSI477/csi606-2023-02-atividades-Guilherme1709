@@ -7,4 +7,4 @@
 - Curso: Sistemas de Informação
 - Tecnologias Utilizadas: JavaScript, Prisma Studio, Node.jS e SQLite
 - Execução: Abra o terminal na pasta server e inicie o servidor com o comando npm start
-- CRUD: Para realizar as operções, execute os comandos do arquivo server.rest, com o servidor inicializado
+- CRUD: Para realizar as operações, execute os comandos do arquivo server.rest, com o servidor inicializado
