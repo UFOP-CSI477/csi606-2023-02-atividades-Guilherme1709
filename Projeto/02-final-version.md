@@ -14,7 +14,6 @@ Das funcionalidades descritas anteriormente, foram implementadas:
 - Pesquisa por locais;
 - Interação com o mapa do local pesquisado;
 - Geração de um Json com informações básicas desse local;
-- 
   
 ### 2. Funcionalidades previstas e não implementadas
 Estava previsto a busca por atributos dos locais, como endereço e características específicas. O SGBD utilizado para armazenar esses dados foi o Neo4j, um banco NoSQL orientado a grafos, que possui complexidade diferente dos bancos tradicionais. Logo, levaria um tempo além do previsto para configurar a lógica das consultas com os relacionamentos entre os vértices e arestas.
