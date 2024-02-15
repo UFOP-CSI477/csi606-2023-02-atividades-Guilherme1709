@@ -7,8 +7,7 @@
 <!-- Este documento tem como objetivo apresentar o projeto desenvolvido, considerando o que foi definido na proposta e o produto final. -->
 
 ### Resumo
-
-O sistema, à princípio, permitirá que os usuários explorem e visualizem informações geográficas em formato de mapas interativos, além de poderem procurar por locais. Apenas locais do território brasileiro estão disponíveis para pesquisa. Os usuários têm a capacidade de explorar e visualizar informações geográficas em formato de mapas interativos, além de poderem procurar locais, endereços ou características geoespaciais específicas no mapa.
+O sistema, à princípio, permitirá que os usuários explorem e visualizem informações geográficas em formato de mapas interativos, além de poderem procurar por locais. Apenas locais do território brasileiro estão disponíveis para pesquisa. 
 
 ### 1. Funcionalidades implementadas
 Das funcionalidades descritas anteriormente, foram implementadas:
