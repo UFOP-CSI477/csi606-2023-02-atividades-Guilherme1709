@@ -1,4 +1,4 @@
-# **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
+# **CSI606-2023-02 - Presencial - Trabalho Final - Resultados**
 
 ## *Aluna(o): Guilherme Lopes de Araújo*
 
