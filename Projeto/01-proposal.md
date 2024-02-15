@@ -35,4 +35,6 @@
 
 ### 5. Referências
 
-  Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+Monteiro, B. R. (2021). Usage of focused gazetteers in geoparsing. PhD thesis, Universidade Federal de Minas Gerais, Belo Horizonte, MG, Brasil. Disponível em https://repositorio.ufmg.br/handle/1843/36251.
+
+Monteiro, B. R., Davis Jr., C. A., e Fonseca, F. (2016). A survey on the geographic scope of textual documents. Computers & Geosciences, 96:23–34.
