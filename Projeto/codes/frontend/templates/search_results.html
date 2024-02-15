@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Resultado da Pesquisa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/search.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <style>
+         #map {
+            height: 400px;
+            width: 80%;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="nav-container" style="color: #fff;">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="/" class="navbar-brand">
+                    <img src="static/assets/brasil-logo.png" alt="brasil-logo" style="left: 60%; position: relative; width: 64px; height: 64px;">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links" style="padding: 3rem; ">
+                    <div class="navbar-nav">
+                        <a href="https://github.com/Guilherme1709/GraphGeoNames" target="_blank" class="nav-item nav-link" id="sobre-menu">Sobre o Projeto</a>
+                        <a href="https://ufop.br" target="_blank" class="nav-item nav-link" id="insti-menu">Instituições</a>
+                        <a href="https://wa.me/5531999701709" target="_blank" class="nav-item nav-link" id="contato-menu">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    {% if location %}
+        <h2 style="font-size: 80px;">{{ location.name }}</h2>
+
+        <div id="map"></div>
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([{{coordenadas.latitude}}, {{coordenadas.longitude}}], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([{{coordenadas.latitude}}, {{coordenadas.longitude}}]).addTo(map)
+                .bindPopup('Localização.')
+                .openPopup();
+        </script>
+        
+        <form action="/json" method="post">
+            <div class="text-center">
+                <input class="btn btn-secondary btn-sm" type="submit" value="Gerar JSON">
+            </div>
+        </form>
+        <a href="/" class="voltar" style="top: 90%; left: 3%;"></a>
+    {% else %}
+        <h2>Nenhum local encontrado!</h2>
+        <a href="/" class="voltar"></a>
+    {% endif %}
+</body>
+
+</html>

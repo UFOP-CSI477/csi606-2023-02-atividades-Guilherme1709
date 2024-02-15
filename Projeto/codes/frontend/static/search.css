@@ -1,0 +1,85 @@
+/* Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(243, 239, 209, 1);
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
+    color: rgba(126, 119, 48, 1);
+    font-size: 128px;
+    text-align: center;
+}
+
+/* Barra de navegaçao */
+
+header, .navbar {
+    background-color: #965F29;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+.nav-item{
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+h2 {
+    font-family: 'Istok Web';   
+    font-size: 60px;
+    text-align: center;
+    top: 40%;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.voltar {
+    background-image: url("../static/assets/volte.png");
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+input {
+    margin-top: 1%;
+}

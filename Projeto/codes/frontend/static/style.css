@@ -1,153 +1,121 @@
-/* página em geral */
+/* Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Inter';
+    color: #fff;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.header {
-    background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.navbar {
-    background-color: #444;
-    overflow: hidden;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navbar li {
-    float: left;
-    margin-right: 20px;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #555;
-}
-
-.icon{
+    background-image: url(../static/assets/background.png);
+    background-repeat: no-repeat;
     position: absolute;
-    background-image: url('./assets/brasil.png');
-    width: 60px;
-    height: 60px;
-    left: 87%;
-    margin-top: -20px;
-}
-
-.center-content {
-    text-align: center;
-    margin-top: 100px;
-}
-
-/* formulário da pesquisa */
-.search-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.search-form label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.search-form input[type="text"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    height: 100%;
+    font-weight: 400;
 }
 
-.search-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
     color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 14px;
 }
 
-.search-form button:hover {
-    background-color: #0056b3;
+
+/* Barra de navegaçao */
+header, .navbar {
+    background-color: #965F29;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    color: #fff;
 }
 
-/* resultados */
-.results {
-    margin-top: 40px;
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.results h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+#logo {
+    width: 75px;
 }
 
-.result {
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.navbar-brand {
+    padding: 0;
+    color: #fff;
 }
 
-/* links */
-.result a {
-    color: #007bff;
-    text-decoration: none;
+.navbar-brand:hover {
+    color: #fff;
 }
 
-.result a:hover {
-    text-decoration: underline;
+.nav-item {
+    color: #fff;
 }
 
-/* título */
-.center-title {
+.navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+h2 {
+    font-family: 'Istok Web';
+    font-size: 100px;
     text-align: center;
-    margin-top: 30px;
-    font-size: 36px;
-    color: #333;
+    color: #33200d;
+    font-weight: 500;
 }
 
-/* Estilo para o cabeçalho da página */
-header {
-    background-color: #005A8A;
-    color: white;
-    padding: 10px;
+form {
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
+.lupa {
+    background-image: url("../static/assets/lupa.png");
+    width: 80px;
+    background-repeat: no-repeat;
+    height: 64px;
+    border: none;
+    border-radius: 15px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.btn {
+    background-color: #965F29; 
+    border: none;
+    left: 20%;
+    position: relative;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.btn:hover {
+    background-color: #33200d;
+}
+
+.btn2 {
+    background-color: #965F29; 
+    border: none;
+    position: relative;
+    margin-top: 1%;
+    border-radius: 5%;
+}
+
+.nameuser {
+    color: black;
+}
+
+.passuser {
+    color: black;
 }
